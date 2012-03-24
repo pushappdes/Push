@@ -1,1 +1,34 @@
-This is a test readme file
+This file contains information regarding access to the Google App Engine account and also details regarding access to the 
+QR barcode image.
+
+To access the Google app engine web app we need to go to the link:
+
+http://ropushapptest.appspot.com
+
+To access the QR bar code to download the android app, go to the link:
+
+http://qrcode.kaywa.com/img.php?s=8&d=http%3A%2F%2Fix.cs.uoregon.edu%2F~rohitp%2Fropushapptest-Android.apk
+
+In order to use this web app:
+
+    -> Go to the first link click on "Say Hello" to check if the server is round tripping from Google App Engine. 
+  
+    -> Next enter the email id of the account which is associated with the android app (the account that you have synced 
+       to your phone) in the section where it says "pat@example.com" and enter the text in the "Message" section and click
+       "send message". Wallah!!! It should have sent a message to the phone.
+
+In order to downoad and install the app on the phone:
+
+    -> Install a QR barcode reader app such as QRDroid from the android market.(Note you need either
+       a Wifi connection or 3G to run android market).
+    -> Go to the second link mentioned above and scan the bar code through the Scan button available on the QR barcode app
+       and face the camera to get an image of the barcode. Note that the bar code image should be within the rectangle that
+       appears on the LCD screen of the phone.
+    -> Then this will automatically download the apk link to the barcode reader app and display the link on the screen. 
+       Just click on the link and then click on install. This should install the app automatically. 
+    -> After this under the options in the downloaded app which opens, click on Accounts and add a google account so that an
+       account is associated with the app. Note that the google account you entered should be the same as what is entered
+       on the webapp section mentioned above under point 3 of the web app instructions or else the message will not be
+       delivered causing an error.
+     -> The google app engine account also contains various settings allowing adding developer privileges among others that
+        can be seen in the dashboard section.

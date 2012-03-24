@@ -1,0 +1,33 @@
+1. What if you open eclipse after installation and it gives a JRE or JDK based error message:
+It means you have not installed JDK on your system. So go and download and install the JDK here:
+http://www.oracle.com/technetwork/java/javase/downloads/jdk-7u3-download-1501626.html
+
+2. What if I install eclipse and don't find "Local app engine related android
+project" under File->New-> Other->Android-> Local app engine related android
+project. 
+Answer: Go to help-> Install new software and retype the link for installing the google plugin for
+eclipse. For example, go to the link http://dl.google.com/eclipse/plugin/beta/3.6 for Eclipse Helios.
+Then follow the steps and click on install even if it says the plugin is already installed. This will install
+only the section named "Local app engine related android project".  that is not yet installed.
+
+3. What do I do if I am unable to make the app engine wizard project have the registration of
+C2DM succeed on the  phone?
+
+Solution: Check if the phone has a google account synced you used set up by going to Settings->Accounts and Sync section. If not add a new gmail account using the Accounts and Sync option.If an
+account is already available, then you can just try deploying your app and try running the application using a remote server rather than running it locally using the "debug as local app engine connected android project" option on eclipse,
+since the phone unlike an emulator needs the app to be deployed before receiving C2DM messages.
+
+4. How do I make a QR code for my android app?
+ 
+Solution: Its very simple. When you compile your code and run it on an emulator, there should be a bin folder in the list of files for your android project in the package explorer in Eclipse. Inside the bin folder the apk automatically gets created and is readily available for use.
+Just right click on that apk file, click on copy and then paste in anywhere in your computer.Next, open an FTP client like secure shell or Filezilla, upload this file on a server of your choice.Finally go to this website:
+ http://www.qrstuff.com/
+
+Enter the url where you stored the apk...Example: www.blah.com/something.apk
+
+You get the QR code on the right. Just save that image or rather the http link of the image somewhere, may be on a webpage using the img-src tag available in html.
+
+Finally download a QR barcode reader through the android market on your phone(Note: your phone needs have android 2.2 or higher installed for this application to work.) Suggested android app is QRDroid. Use this app to scan the barcode.
+Wallah...Done!!!
+
+
